@@ -1,5 +1,21 @@
 body {
   margin: 40px;
+  background-color: #330000;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+}
+
+.sidebar2 ul li {
+  display: inline;
 }
 
 .sidebar {
@@ -27,6 +43,8 @@ body {
         color: #444;
     }
 
+
+  /*Mobile view*/
   .wrapper {
     display: grid;
     grid-gap: 1em;
@@ -35,35 +53,33 @@ body {
      "sidebar"
      "content"
      "sidebar2"
-     "footer"
+     "footer";
   }
-
+    /*Tablet view*/
     @media only screen and (min-width: 500px)  {
-    .wrapper {
+      .wrapper {
 
-        grid-template-columns: 20% auto;
-        grid-template-areas:
-    "header   header"
-        "sidebar  content"
-        "sidebar2 sidebar2"
-        "footer   footer";
-    }
+          grid-template-columns: 20% auto;
+          grid-template-areas:
+      "header   header"
+          "sidebar  content"
+          "sidebar2 sidebar2"
+          "footer   footer";
+      }
     }
 
-    @media only screen and (min-width: 600px)   {
-        .wrapper {
-      grid-gap: 20px;
-            grid-template-columns: 120px auto 120px;
-            grid-template-areas:
-      "header  header  header"
-            "sidebar content sidebar2"
-            "footer  footer  footer";
-            max-width: 600px;
-        }
+    /*Desktop view*/
+    @media only screen and (max-width: 600px)   {
+            .wrapper {
+              grid-gap: 20px;
+              grid-template-columns: 272px auto 230px;
+              grid-template-areas: "header header header" "sidebar content sidebar2" "footer footer footer";
+              max-width: 1200px;
+            }
     }
 
 .box {
-  background-color: #444;
+  background-color: red;
   color: #fff;
   border-radius: 5px;
   padding: 10px;
