@@ -23,9 +23,7 @@ img {
   padding: 20px;
 }
 
-.sidebar2 ul li {
-  display: inline;
-}
+
 
 .sidebar {
         grid-area: sidebar;
@@ -50,6 +48,14 @@ img {
 .wrapper {
     background-color: #fff;
     color: #444;
+}
+
+.sidebar2 {
+  background-color: #444;
+  color: #fff;
+  border-radius: 5px;
+  padding: 20px;
+  font-size: 150%;
 }
 
 
