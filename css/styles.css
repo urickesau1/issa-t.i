@@ -21,8 +21,13 @@ img {
     height: auto;
 }
 
+p {
+  color: darkred;
+}
+
 .content p {
   padding: 20px;
+  color: darkred;
 }
 
 
@@ -45,6 +50,8 @@ img {
 
 .footer {
     grid-area: footer;
+    color: red;
+    background-color: darkred;
 }
 
 .wrapper {
@@ -105,7 +112,7 @@ grid-template-areas:
 }
 
 .box {
-  color: #fff;
+  color: grey;
   border-radius: 5px;
   padding: 10px;
   font-size: 150%;
