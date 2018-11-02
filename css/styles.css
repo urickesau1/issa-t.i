@@ -8,10 +8,19 @@ h1 {
   font-family: 'Playfair Display SC', serif;
 }
 
+h2 {
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
 img {
     width: 100%;
     max-width: 300px;
     height: auto;
+}
+
+.content p {
+  padding: 20px;
 }
 
 .sidebar2 ul li {
@@ -20,63 +29,63 @@ img {
 
 .sidebar {
         grid-area: sidebar;
-    }
+}
 
-    .sidebar2 {
-        grid-area: sidebar2;
-    }
+.sidebar2 {
+    grid-area: sidebar2;
+}
 
-    .content {
-        grid-area: content;
-    }
+.content {
+    grid-area: content;
+}
 
-    .header {
-        grid-area: header;
-    }
+.header {
+    grid-area: header;
+}
 
-    .footer {
-        grid-area: footer;
-    }
+.footer {
+    grid-area: footer;
+}
 
-    .wrapper {
-        background-color: #fff;
-        color: #444;
-    }
+.wrapper {
+    background-color: #fff;
+    color: #444;
+}
 
 
-  /*Mobile view*/
+/*Mobile view*/
+.wrapper {
+display: grid;
+grid-gap: 1em;
+grid-template-areas:
+ "header"
+ "sidebar"
+ "content"
+ "sidebar2"
+ "footer";
+}
+/*Tablet view*/
+@media only screen and (min-width: 500px)  {
   .wrapper {
-    display: grid;
-    grid-gap: 1em;
-    grid-template-areas:
-     "header"
-     "sidebar"
-     "content"
-     "sidebar2"
-     "footer";
+
+      grid-template-columns: 20% auto;
+      grid-template-areas:
+  "header   header"
+      "sidebar  content"
+      "sidebar2 sidebar2"
+      "footer   footer";
   }
-    /*Tablet view*/
-    @media only screen and (min-width: 500px)  {
-      .wrapper {
+}
 
-          grid-template-columns: 20% auto;
-          grid-template-areas:
-      "header   header"
-          "sidebar  content"
-          "sidebar2 sidebar2"
-          "footer   footer";
-      }
-    }
-
-    /*Desktop view*/
-    @media only screen and (max-width: 600px)   {
-            .wrapper {
-              grid-gap: 20px;
-              grid-template-columns: 272px auto 230px;
-              grid-template-areas: "header header header" "sidebar content sidebar2" "footer footer footer";
-              max-width: 1200px;
-            }
-    }
+/*Desktop view*/
+@media only screen and (max-width: 600px)   {
+        .wrapper {
+          grid-gap: 20px;
+          grid-template-columns: 272px auto 230px;
+          grid-template-areas: "header header header" "sidebar content sidebar2" "footer footer footer";
+          max-width: 1200px;
+        }
+}
 
 .box {
   background-color: red;
