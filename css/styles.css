@@ -10,6 +10,12 @@ h1 {
   color: #ffff80;
 }
 
+img {
+  width: auto;
+  max-width: 100%;
+  height: auto;
+}
+
 h2 {
   text-align: center;
   font-family: 'Playfair Display SC', serif;
@@ -93,7 +99,7 @@ grid-template-areas:
 
   .sidebar2 {
   display: grid;
-  grid-template-columns: 300px 300px 300px;
+  grid-template-columns: 400px 400px 400px;
   grid-gap: 10px;
   color: #444;
 }
