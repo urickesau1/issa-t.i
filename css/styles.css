@@ -104,6 +104,10 @@ grid-template-areas:
   color: #444;
 }
 
+.footer {
+  color: darkred;
+}
+
 
 }
 
@@ -132,4 +136,8 @@ grid-template-areas:
 .sidebar2 {
   background-color: #ccc;
   color: #444;
+}
+
+.footer {
+  color: darkred;
 }
