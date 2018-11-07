@@ -7,18 +7,17 @@ h1 {
   text-align: center;
   font-family: 'Playfair Display SC', serif;
   text-decoration: underline;
-  color: #ffff80;
+  color: gold;
+}
+
+.header h2 {
+  text-align: center;
 }
 
 img {
   width: auto;
   max-width: 100%;
   height: auto;
-}
-
-h2 {
-  text-align: center;
-  font-family: 'Playfair Display SC', serif;
 }
 
 img {
@@ -36,10 +35,213 @@ p {
   color: darkred;
 }
 
+.content img {
+    border-radius: 50%;
+    align-self: center;
+    height: auto;
+    width: auto;
+    max-width: 30%;
 
+}
+
+h2 {
+  top: 50%;
+  left: 50%;
+  transform: translate(317%,-50%);
+  width: 246px;
+  height: 150px;
+  color: #fff;
+  font-size: 29px;
+  text-transform: uppercase;
+  text-decoration: none;
+  box-sizing: border-box;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+      background-size: auto auto;
+  background-size: 300%;
+  z-index: 1;
+  text-align: center;
+  font-family: 'Playfair Display SC', serif;
+}
+
+h2:hover {
+  animation: animate 8s linear infinite;
+}
+
+@keyframes animate {
+  0%{
+    background-position: 0%;
+  }
+  100%{
+    background-position: 400%;
+  }
+}
+
+h2:before {
+  content: '';
+  position: absolute;
+  top: -5px;
+  left: -5px;
+  right: -5px;
+  bottom: -5px;
+  z-index: -1;
+  background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+  background-size: 400%;
+  border-radius: 40px;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+h2:hover:before {
+  filter: blur(20px);
+  opacity: 1;
+  animation: animate 8s linear infinite;
+}
+
+
+
+
+/*NAVBAR STYLES*/
+/*
+.navbar {
+  color: white;
+}
+
+  .navbar ul {
+    margin: 0px;
+    padding: 0px;
+    list-style: none;
+  }
+
+  .navbar ul li {
+    float: left;
+    width: 470px;
+    height: 65px;
+    background-color: transparent;
+    opacity: .8;
+    line-height: 40px;
+    text-align: center;
+
+
+  }
+
+  .navbar ul li a {
+    text-decoration: none;
+    color: yellow;
+    display: block;
+  }
+
+  .navbar ul li ul li {
+    display: none;
+  }
+
+  .navbar ul li:hover ul li {
+    display: block;
+  }*/
+
+  /*h2 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 200px;
+    height: 60px;
+    color: #fff;
+    font-size: 20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    box-sizing: border-box;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 200%;
+    z-index: 1;
+    text-align: center;
+    font-family: 'Playfair Display SC', serif;
+  }
+
+  h2:hover {
+    animation: animate 8s linear infinite;
+  }
+
+  @keyframes animate {
+    0%{
+      background-position: 0%;
+    }
+    100%{
+      background-position: 400%;
+    }
+  }
+
+  /*h2:before {
+    content: '';
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    right: -5px;
+    bottom: -5px;
+    z-index: -1;
+    background: linear-gradient(90deg, #03a9f4, #f441a5, #ffeb3b, #03a9f4);
+    background-size: 400%;
+    border-radius: 40px;
+    opacity: 0;
+    transition: 0.5s;
+  }
+
+  h2:hover:before {
+    filter: blur(20px);
+    opacity: 1;
+    animation: animate 8s linear infinite;
+  }
+
+
+/*NAVBAR*/
+
+/*body {
+  color: red;
+  font-family: arial;
+}
+*/
+    .navbar ul {
+      margin: 0px;
+      padding: 0px;
+      list-style: none;
+    }
+
+    .navbar ul li {
+      float: left;
+      width: 450px;
+      height: 50px;
+      background-color: black;
+      opacity: .8;
+      line-height: 40px;
+      text-align: center;
+      font-size: 20px;
+    }
+
+    .navbarul li a {
+      text-decoration: none;
+      color: red;
+      display: block;
+
+    }
+
+   .navbar ul li:hover {
+      background-color: yellow;
+
+    }
+
+   .navbar ul li ul li {
+      display: none;
+    }
+
+   .navbar ul li:hover ul li {
+      display: block;
+    }
 
 .sidebar {
         grid-area: sidebar;
+}
+
+.sidebar li {
+  font-size: 24px;
+  color: gold;
 }
 
 .sidebar2 {
@@ -48,10 +250,13 @@ p {
 
 .content {
     grid-area: content;
+    text-align: center;
+    
 }
 
 .header {
     grid-area: header;
+    height: 588px;
 }
 
 .footer {
