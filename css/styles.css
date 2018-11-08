@@ -425,6 +425,11 @@ grid-template-areas:
     max-width: 1200px;
   }
 
+  .header {
+    grid-area: header;
+    height: 588px;
+  }
+
 
   .navbar ul li {
     float: left;
