@@ -3,6 +3,22 @@ body {
   background-color: #330000;
 }
 
+#red {
+  color: red;
+}
+
+#green {
+  color: green;
+}
+
+#orange {
+  color: orange;
+}
+
+#blue {
+  color: blue;
+}
+
 h1 {
   text-align: center;
   font-family: 'Playfair Display SC', serif;
@@ -229,6 +245,7 @@ h2:hover:before {
 
    .navbar ul li ul li {
       display: none;
+      width: 25%;
     }
 
    .navbar ul li:hover ul li {
@@ -371,7 +388,7 @@ h2:hover:before {
 }
 
 /*Desktop view*/
-@media only screen and (max-width: 600px)   {
+@media only screen and (max-width: 800px)   {
         .wrapper {
           grid-gap: 20px;
           grid-template-columns: 272px auto 230px;
@@ -382,7 +399,7 @@ h2:hover:before {
 
 .navbar ul li {
   float: left;
-  width: 153px;
+  width: 25%;
   height: 50px;
   background-color: black;
   opacity: .8;
