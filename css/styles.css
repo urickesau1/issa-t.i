@@ -423,6 +423,7 @@ h2:hover:before {
 .header,
 .footer {
   background-color: #999;
+  padding-top: 35px;
 }
 
 .sidebar2 {
