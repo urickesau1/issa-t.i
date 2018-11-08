@@ -359,7 +359,7 @@ grid-template-areas:
   h2 {
     top: 50%;
     left: 50%;
-    transform: translate(317%,-50%);
+    transform: translate(235%,-50%);
     width: 246px;
     height: 150px;
     color: #fff;
@@ -374,6 +374,7 @@ grid-template-areas:
     text-align: center;
     font-family: 'Playfair Display SC', serif;
   }
+  
 
   h2:hover {
     animation: animate 8s linear infinite;
