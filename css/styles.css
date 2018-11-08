@@ -335,6 +335,11 @@ grid-template-areas:
     display: none;
   }
 
+  .navbar ul li ul li {
+    display: none;
+    width: 61%;
+  }
+
 
 
   .footer {
